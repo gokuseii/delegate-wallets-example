@@ -1,12 +1,12 @@
-# Privy Auth `create-react-app` Starter
+# Privy Delegation Access Example
 
-This is a minimal template for integrating [Privy Auth](https://www.privy.io/) into a new [`create-react-app`](https://create-react-app.dev/) project. Check out the deployed app [here](https://create-react-app.privy.io/)!
+This is a minimal example for delegate user wallet to server
 
 ## Setup:
 
 1. Clone this repository and open it in your terminal.
 ```
-git clone https://github.com/privy-io/create-react-app.git
+git clone https://github.com/gokuseii/delegate-wallets-example
 ```
 
 2. Install the necessary dependencies (including [Privy Auth](https://www.npmjs.com/package/@privy-io/react-auth)) with `npm`.
@@ -22,6 +22,14 @@ cp .env.example .env
 # Add your Privy App ID to .env
 REACT_APP_PRIVY_APP_ID=<your-privy-app-id>
 ```
+
+## Privy App Settings:
+
+To activate delegation access:
+
+1. Go to [Privy Dashboard - Apps](https://dashboard.privy.io/apps)
+2. Navigate to:  
+   `Authentication > Advanced > Server-side access (offline access)`
 
 ## Building locally:
 
