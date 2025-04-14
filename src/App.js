@@ -102,6 +102,10 @@ function App() {
           Create Solana Wallet
         </button>
       )}
+
+      <pre className="mt-4 p-2 bg-gray-100 text-sm overflow-x-auto">
+        {JSON.stringify(user, null, 2)}
+      </pre>
     </div>
   );
 }

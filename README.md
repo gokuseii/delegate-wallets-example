@@ -6,7 +6,7 @@ This is a minimal example for delegate user wallet to server
 
 1. Clone this repository and open it in your terminal.
 ```
-git clone https://github.com/gokuseii/delegate-wallets-example
+git clone https://github.com/Anola-Software/delegate-wallets-example
 ```
 
 2. Install the necessary dependencies (including [Privy Auth](https://www.npmjs.com/package/@privy-io/react-auth)) with `npm`.
@@ -30,6 +30,31 @@ To activate delegation access:
 1. Go to [Privy Dashboard - Apps](https://dashboard.privy.io/apps)
 2. Navigate to:  
    `Authentication > Advanced > Server-side access (offline access)`
+
+## Get user wallets
+```bash
+curl --request GET https://auth.privy.io/api/v1/users/user_did_id \
+  -u "app_id:app_secret" \
+  -H "privy-app-id: app_id" \
+  -H "Content-Type: application/json"
+```
+```
+{
+  "id": "did:privy:user_id",
+  "created_at": 1744363257,
+  "linked_accounts": [
+    ...
+    {
+      // WalletID to use in API requests
+      "id": "vl9ej577qe9qjxoefdkvsok", 
+      "type": "wallet",
+      "address": "0x...",
+      "wallet_index": 0
+    }
+    ...
+  ]
+}
+```
 
 ## Building locally:
 
