@@ -38,7 +38,7 @@ curl --request GET https://auth.privy.io/api/v1/users/user_did_id \
   -H "privy-app-id: app_id" \
   -H "Content-Type: application/json"
 ```
-```
+```json
 {
   "id": "did:privy:user_id",
   "created_at": 1744363257,
